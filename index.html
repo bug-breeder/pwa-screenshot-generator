@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppeteer Screenshot</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Puppeteer Screenshot</h1>
+
+      <div class="field">
+        <label class="label">Device</label>
+        <div class="control">
+          <div class="select">
+            <select id="deviceSelect">
+              <option value="pc">PC</option>
+              <option value="iPhone 11">iPhone 11</option>
+              <option value="iPhone X">iPhone X</option>
+              <option value="iPad Pro">iPad Pro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">URL</label>
+        <div class="control">
+          <input class="input" type="text" id="urlInput" placeholder="Enter the URL">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <button id="openBrowserButton" class="button is-link">Open Browser</button>
+        </div>
+      </div>
+
+      <div class="field" id="screenshotField" style="display: none;">
+        <div class="control">
+          <button id="screenshotButton" class="button is-success">Take Screenshot</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
